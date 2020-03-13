@@ -9,5 +9,6 @@
 import UIKit
 
 class ColorCell: UICollectionViewCell {
-    
+    @IBOutlet weak var title: UILabel!
+    static let id = "ColorCell"
 }

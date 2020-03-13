@@ -1,30 +1,36 @@
-//
-//  DetailController.swift
-//  ColorsDemo
-//
-//  Created by Ibraheem rawlinson on 3/9/20.
-//  Copyright © 2020 Ibraheem rawlinson. All rights reserved.
-//
-
 import UIKit
 
 class DetailController: UIViewController {
-
+    //MARK: - PROPERTIES
+    public var expectedColor: String!
+    @IBOutlet weak var name: UILabel!
+    @IBOutlet weak var newView: UIView!
+    @IBOutlet weak var yesButton: UIButton!
+    //MARK: - LIFE CYCLE
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        callMethods()
+    }
+    //MARK: - METHODS
+    private func callMethods(){
+        createUI()
+        
+    }
+    private func createUI(){
+        name.text = expectedColor
+        newView.backgroundColor = UIColor.init(hexString: expectedColor)
+        newView.layer.cornerRadius = 18
+        yesButton.layer.cornerRadius = 9
+        yesButton.backgroundColor = UIColor.init(hexString: expectedColor)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func yesButtonPressed(_ sender: UIButton) {
+        guard let hexText =  name.text else { return }
+        let alertController = UIAlertController(title: "Success", message: "You have successfully saved \(hexText) to your cart", preferredStyle: .alert)
+        let okcation = UIAlertAction(title: "OK", style: .default, handler: nil)
+        alertController.addAction(okcation)
+        present(alertController, animated: true, completion: nil)
     }
-    */
-
+    
 }
+//MARK: - EXTENSIONS

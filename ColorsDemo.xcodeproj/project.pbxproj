@@ -13,6 +13,10 @@
 		4889BF122416D362006BCC07 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4889BF102416D362006BCC07 /* Main.storyboard */; };
 		4889BF142416D363006BCC07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4889BF132416D363006BCC07 /* Assets.xcassets */; };
 		4889BF172416D363006BCC07 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4889BF152416D363006BCC07 /* LaunchScreen.storyboard */; };
+		4889BF1F2416D95E006BCC07 /* ColorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4889BF1E2416D95E006BCC07 /* ColorCell.swift */; };
+		4889BF212416EAAF006BCC07 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4889BF202416EAAF006BCC07 /* Color.swift */; };
+		4889BF232416ECDC006BCC07 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4889BF222416ECDC006BCC07 /* Color+Extension.swift */; };
+		4889BF252416FC43006BCC07 /* DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4889BF242416FC43006BCC07 /* DetailController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		4889BF132416D363006BCC07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4889BF162416D363006BCC07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4889BF182416D363006BCC07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4889BF1E2416D95E006BCC07 /* ColorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCell.swift; sourceTree = "<group>"; };
+		4889BF202416EAAF006BCC07 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		4889BF222416ECDC006BCC07 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		4889BF242416FC43006BCC07 /* DetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +71,10 @@
 				4889BF132416D363006BCC07 /* Assets.xcassets */,
 				4889BF152416D363006BCC07 /* LaunchScreen.storyboard */,
 				4889BF182416D363006BCC07 /* Info.plist */,
+				4889BF1E2416D95E006BCC07 /* ColorCell.swift */,
+				4889BF202416EAAF006BCC07 /* Color.swift */,
+				4889BF222416ECDC006BCC07 /* Color+Extension.swift */,
+				4889BF242416FC43006BCC07 /* DetailController.swift */,
 			);
 			path = ColorsDemo;
 			sourceTree = "<group>";
@@ -139,7 +151,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				4889BF0F2416D362006BCC07 /* ViewController.swift in Sources */,
+				4889BF252416FC43006BCC07 /* DetailController.swift in Sources */,
+				4889BF232416ECDC006BCC07 /* Color+Extension.swift in Sources */,
+				4889BF1F2416D95E006BCC07 /* ColorCell.swift in Sources */,
 				4889BF0B2416D362006BCC07 /* AppDelegate.swift in Sources */,
+				4889BF212416EAAF006BCC07 /* Color.swift in Sources */,
 				4889BF0D2416D362006BCC07 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,6 +303,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 465ZSD32S3;
 				INFOPLIST_FILE = ColorsDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,6 +322,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 465ZSD32S3;
 				INFOPLIST_FILE = ColorsDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
